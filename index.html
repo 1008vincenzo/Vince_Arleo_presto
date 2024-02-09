@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presto.it</title>
+  
+  <!-- SWIPER CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <!-- CDN CSS AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- GOOGLE FONTS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
+  
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <!-- CSS CUSTOM -->
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body class="bg-whiteCus">
+  
+  <!-- INZIO NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container-fluid">
+      
+      <!-- primo logo -->
+      <a class="navbar-brand" href="#" id="brownLogo">
+        <img class="logo" src="./media/logoBrown.png" alt="">
+      </a>
+      
+      <!-- secondo -->
+      <a class="navbar-brand d-none" href="#" id="beigeLogo">
+        <img class="logo" src="./media/logoBeige.png" alt="">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-regular fa-hand-point-up fa-2x text-accent" id="fingerIcon"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-3 pe-5 me-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./annunci.html">Annunci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./chiSiamo.html">Chi Siamo?</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!-- FINE NAVBAR -->
+
+  <!-- SCROLLER -->
+  <a href="#" id="scroller">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <main>
+    
+    <!-- INZIO HEADER -->
+    <header class="container-fluid">
+      <div class="row vh-100 headerCustom align-items-center ">
+        <div class="col-12">
+          <h1 class="text-center" data-aos="zoom-in" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">Presto.it</h1>
+        </div>
+      </div>
+    </header>
+    <!-- FINE HEADER -->
+    
+    <!-- INIZIO AOS SECTION -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center ">
+          <img class="clothes" src="./media/clothes.png" alt="vestiario" data-aos="fade-right" data-aos-duration="1000">
+        </div>
+        
+        <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center   ">
+          <h2 id="h2Obs" class="py-3 display-2 text-accent" >Un pò di numeri</h2>
+          
+          <p class="py-3 fw-bold  text-accent shadow">
+            <span class="d-block display-3 incrementNumber" id="firstSpan">0</span>
+            Clienti Soddisfatti
+          </p>
+          <p class="py-3 fw-bold text-accent shadow">
+            <span class="d-block display-3 incrementNumber" id="secondSpan">0</span>
+            Prodotti Venduti
+          </p>
+          <p class="py-3 fw-bold text-accent shadow">
+            <span class="d-block display-3 incrementNumber" id="thirdSpan">0</span>
+            Recensioni
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FINE AOS SECTION -->
+    
+    <!-- INIZIO SEZIONE SWIPER -->
+    <section class="container my-5">
+      <div class="row justify-content-center ">
+        <div class="col-12 col-lg-8">
+
+          <h2 class="text-center text-accent fs-1 mt-5">Recensioni</h2>
+          
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+   
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+      
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- FINE SEZIONE SWIPER -->
+
+    <!-- INIZIO SEZIONE MOUSE ENTER -->
+    <section class="container-fluid">
+      <h2 class="text-center text-accent my-5 display-2 ">I più veloci del webbest</h2>
+
+      <div class="row justify-content-around align-items-center my-5 bg-secondaryCus hCustom shadow"> 
+
+        <div class="col-8 col-lg-3 col-custom my-5">
+          <div class="bordoTruck mb-4">
+            <i class="fa-solid fa-truck fa-3x text-accent"></i>
+          </div>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iusto delectus aperiam inventore quasi cumque.</p>
+
+        </div>
+
+        <div class="col-8 col-lg-3 col-custom my-5">
+          <div class="bordoTruck mb-4">
+            <i class="fa-solid fa-truck fa-3x text-accent"></i>
+          </div>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iusto delectus aperiam inventore quasi cumque.</p>
+
+        </div>
+
+        <div class="col-8 col-lg-3 col-custom my-5">
+          <div class="bordoTruck mb-4">
+            <i class="fa-solid fa-truck fa-3x text-accent"></i>
+          </div>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iusto delectus aperiam inventore quasi cumque.</p>
+
+        </div>
+        
+      </div>
+    </section>
+    <!-- FINE SEZIONE MOUSE ENTER -->
+    
+  </main>
+
+    
+  <!-- INIZIO FOOTER -->
+
+  <footer class="container-fluid bg-secondaryCus">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img class="logo" src="./media/logoBrown.png" alt="">
+        </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- FINE FOOTER -->
+  
+  <!-- CDN JS AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- SWIPER JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- INIZIALIZE AOS -->
+  <script>
+    AOS.init();
+  </script>
+  
+  <!-- JS BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <!-- JS CUSTOM -->
+  <script src="./main.js"></script>
+  
+  <!-- JS INTERNO -->
+  <script>
+
+    let advices = [
+      {nome: 'Bruno' , recensione : 'Il sito più bello del mondo'},
+      {nome: 'Ara' , recensione : 'i tempi sono lunghi e il prodotto e di scarsa qualità'},
+      {nome: 'Vincenzo' , recensione : 'la disponibbilità è immediata'},
+      {nome: 'Eva' , recensione : 'pessimo servizio!'},
+    ];
+
+    // catturiamo il papà swiper delle card swiper Slider
+    let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+    advices.forEach((advice)=>{
+
+      let div = document.createElement('div');
+
+      div.classList.add('swiper-slide', 'd-flex', 'align-items-center', 'justify-content-center');
+
+      div.innerHTML = `
+      
+                <div class="cardRec">
+                  <p class="h3">${advice.nome}</p>
+                  <p class="text-center ">${advice.recensione}</p>
+                </div>
+      
+      `;
+
+      swiperWrapper.appendChild(div);
+
+    });
+
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // effetto coverflow
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+      // autoplay
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      
+      // breakpoints
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      
+    });
+  </script>
+</body>
+</html>
